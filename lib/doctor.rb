@@ -1,3 +1,5 @@
+require 'pry'
+
 class Doctor 
   
   attr_accessor :name, :appointments 
@@ -20,6 +22,7 @@ class Doctor
   
   def appointments 
     @appointments = Appointment.all.filter{|apt| apt.doctor == self}
+    binding.pry
   end 
   
   def new_appointment(date, patient)
