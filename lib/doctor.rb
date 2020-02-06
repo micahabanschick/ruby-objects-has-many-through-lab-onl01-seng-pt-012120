@@ -22,7 +22,7 @@ class Doctor
   end 
   
   def appointments 
-    @appointments = Appointment.all.filter{|apt| apt.doctor == self}
+    @appointments = Appointment.all.map{|apt| apt.doctor == self}
     #binding.pry
   end 
   
