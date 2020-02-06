@@ -22,7 +22,7 @@ class Doctor
   
   def appointments 
     @appointments = Appointment.all.filter{|apt| apt.doctor == self}
-    binding.pry
+    #binding.pry
   end 
   
   def new_appointment(date, patient)
