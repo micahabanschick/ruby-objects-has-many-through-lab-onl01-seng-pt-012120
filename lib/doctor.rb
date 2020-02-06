@@ -9,6 +9,7 @@ class Doctor
   def initialize(name)
     @name = name 
     @appointments = []
+    @patients = []
     self.save 
   end 
   
