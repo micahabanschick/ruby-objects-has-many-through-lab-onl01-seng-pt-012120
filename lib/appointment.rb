@@ -10,6 +10,7 @@ class Appointment
     @patient = patient 
     doctor.appointments << self 
     patient.appointments << self
+    doctor.patients << self.patient
     self.save 
   end 
   
