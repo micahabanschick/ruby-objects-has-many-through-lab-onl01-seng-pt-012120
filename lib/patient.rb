@@ -20,11 +20,11 @@ class Patient
   end 
   
   def new_appointment(doctor, date)
-    Appointment.new(date, doctor, self)
+    @appointments << Appointment.new(date, doctor, self)
   end 
   
   def appointments 
-    @appointments = Appointment.all.filter{|apt| apt.patient == self}
+    @appointments 
   end 
   
   def doctors 
