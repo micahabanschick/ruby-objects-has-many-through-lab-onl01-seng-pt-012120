@@ -22,7 +22,7 @@ class Doctor
   end 
   
   def appointments 
-    @appointments = Appointment.all.each{|apt| apt.doctor == self}
+    @appointments
     #binding.pry
   end 
   
